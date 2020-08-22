@@ -81,9 +81,8 @@ Page({
     //   console.log(err); 
     //  }
     wx.showToast({
-      title: '不会吧不会吧，不会真的有人想掏钱吧？  O(∩_∩)O',
-      icon: 'none',
-      duration:2000,
+      title: '支付成功',
+      icon: 'success',
     });
   },
 
