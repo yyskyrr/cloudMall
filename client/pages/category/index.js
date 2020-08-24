@@ -35,9 +35,6 @@ Page({
   },
   getcates(){
     db.collection('categories').get()
-    // request({
-    //   url:"/categories"
-    // })
     .then(res=>{
       
       this.cates=res.data[0].message;

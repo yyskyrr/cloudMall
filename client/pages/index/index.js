@@ -17,7 +17,6 @@ wx-Page({
   },
 
  getswiperlist(){
-  // const db= wx.cloud.database()
   db.collection('swiper').get({
     success:res=>{
       this.setData({
@@ -25,20 +24,12 @@ wx-Page({
       })
     }
   })
-  // request({ url: '/home/swiperdata'})
-  // .then(result => {
-  //   this.setData({
-      
-  //    swiperlist:result.data.message
-  //   })
-  // })
       
   },
 
 
 
   getfloorlist(){
-    // const db= wx.cloud.database()
   db.collection('floordata').get({
     success:result=>{
       // console.log(result.data[0].message);
@@ -48,12 +39,6 @@ wx-Page({
       })
     }
   })
-    // request({ url: '/home/floordata'})
-    // .then(result => {
-    //   this.setData({
-    //     floorlist:result.data.message
-    //   })
-    // })
     
     
   },

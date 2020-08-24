@@ -24,7 +24,6 @@ Page({
   },
 
   async getgoodsdetail(goods_id){
-    // const goodsobj = await request({ url: "/goods/detail", data: { goods_id } });
     const goodsobj = await wx.cloud.callFunction({
       name:'detail',
       data:{
@@ -120,16 +119,16 @@ Page({
  });
  
  // 利用云开发新接口，调用云函数发起订单
- let id = e.target.dataset.goodid;
- const { result } = await wx.cloud.callFunction({
-     name: 'pay',
-     data: {
-         type: 'unifiedorder',
-         data: {
-             goodId: id
-         }
-     } 
- });
+//  let id = e.target.dataset.goodid;
+//  const { result } = await wx.cloud.callFunction({
+//      name: 'pay',
+//      data: {
+//          type: 'unifiedorder',
+//          data: {
+//              goodId: id
+//          }
+//      } 
+//  });
  
  const data = result.data;
  

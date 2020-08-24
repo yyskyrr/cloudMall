@@ -42,7 +42,6 @@ Page({
   },
 
   getgoodslist(){
-    // request({url:"/goods/search",data:this.queryparams})
     wx.cloud.callFunction({
       name:'search',
       data: this.queryparams,
