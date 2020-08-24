@@ -1,4 +1,3 @@
-import { request } from "../../request/index";
 const db = wx.cloud.database()
 wx-Page({
   data: {
@@ -32,7 +31,7 @@ wx-Page({
   getfloorlist(){
   db.collection('floordata').get({
     success:result=>{
-      // console.log(result.data[0].message);
+      console.log(result.data[0].message);
       
       this.setData({
         floorlist:result.data[0].message

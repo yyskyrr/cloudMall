@@ -1,9 +1,4 @@
-import {
-  request
-} from "../../request/index";
-import {
-  requestPayment
-} from "../../utils/asyncWx.js";
+import {requestPayment} from "../../utils/asyncWx.js";
 
 Page({
   data: {

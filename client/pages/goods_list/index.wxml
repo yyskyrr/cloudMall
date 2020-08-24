@@ -8,7 +8,7 @@
     url="/pages/goods_detail/main?goods_id={{item.goods_id}}"
     >
         <view class="goods_img">
-        <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://image5.suning.cn/uimg/b2c/newcatentries/0000000000-000000000193373779_1_400x400.jpg'}}"></image>
+        <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://s1.ax1x.com/2020/08/25/dyoe8f.png'}}"></image>
         </view>
         
 

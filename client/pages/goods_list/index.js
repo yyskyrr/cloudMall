@@ -1,4 +1,3 @@
-import { request } from "../../request/index";
 const db =wx.cloud.database()
 Page({
   data: {
@@ -69,9 +68,8 @@ Page({
 
   onReachBottom(){
     if(this.queryparams.pagenum>=this.totalpages){
-      // console.log("没有下一页数据");
       wx.showToast({
-        title: '没有下一页数据',
+        title: '没有下一页数据了',
       })
     }else{
       this.queryparams.pagenum++;

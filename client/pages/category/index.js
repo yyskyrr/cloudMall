@@ -1,4 +1,3 @@
-import { request } from "../../request/index";
 const db=wx.cloud.database()
 Page({
   data: {

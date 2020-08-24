@@ -1,4 +1,3 @@
-import { request } from "../../request/index";
 Page({
 
   /**
