@@ -6,9 +6,7 @@
     "pages/goods_detail/main",
     "pages/cart/index",
     "pages/collect/index",
-    "pages/search/index",
     "pages/user/index",
-    "pages/feedback/index",
     "pages/pay/index"
   ],
   "window": {
