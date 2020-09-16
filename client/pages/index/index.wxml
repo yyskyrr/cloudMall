@@ -5,6 +5,8 @@
    <swiper-item 
     wx:for="{{swiperlist}}"
     wx:key="goods_id"
+    wx:for-item="item"
+    wx:for-index="index"
    >
      <navigator url="{{item.navigator_url}}">
       <image mode="widthFix" src="{{item.fileid}}"></image>
