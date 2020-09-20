@@ -110,32 +110,5 @@ Page({
 
   },
 
-  async  handleorderpay(e){
-    console.log(e);
-    
-   wx.showLoading({
-     title: '正在下单',
- });
- 
- // 利用云开发新接口，调用云函数发起订单
-//  let id = e.target.dataset.goodid;
-//  const { result } = await wx.cloud.callFunction({
-//      name: 'pay',
-//      data: {
-//          type: 'unifiedorder',
-//          data: {
-//              goodId: id
-//          }
-//      } 
-//  });
- 
- const data = result.data;
- 
- wx.hideLoading();
- 
- wx.navigateTo({
-     url: `/pages/result/index?id=${data.out_trade_no}`
- });
-  }
  
 })
